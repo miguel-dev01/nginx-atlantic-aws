@@ -1,90 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Para Maria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Elastic Container Service</title>
     <style>
         body {
-            background: linear-gradient(to right, #ff9a9e, #fad0c4);
-            font-family: 'Arial', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: Arial, sans-serif;
             margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
         }
-        .container {
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            width: 100%;
             text-align: center;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            width: 80%;
-            max-width: 600px;
-            position: relative;
         }
-        h1 {
-            color: #ff6f91;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .poem {
-            font-size: 1.2em;
-            color: #555;
-            margin-bottom: 20px;
-            line-height: 1.6;
-            animation: fadeIn 3s ease-in-out;
-        }
-        .photo-space {
-            margin: 20px 0;
-            border: 2px dashed #ff6f91;
+        main {
+            flex: 1;
             padding: 20px;
-            border-radius: 10px;
-            animation: pulse 2s infinite;
+            text-align: center;
         }
-        .photo-space img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        .hearts {
-            position: absolute;
-            top: -20px;
-            right: -20px;
-            width: 100px;
-            height: 100px;
-            background: url('https://i.imgur.com/ftVOQ3S.png') no-repeat center center;
-            background-size: cover;
-            animation: moveHearts 5s infinite;
-        }
-        @keyframes moveHearts {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0); }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>Para Maria</h1>
-    <div class="poem">
-        <p>En un rincón del cielo brilla una estrella,</p>
-        <p>tan dulce y bella como tu sonrisa,</p>
-        <p>que ilumina mis días con su luz tan bella,</p>
-        <p>y en mi corazón siempre tendrá su prisa.</p>
-    </div>
-    <div class="photo-space">
-        <img src="assets/photo2.jpeg" alt="Corazón">
-    </div>
-</div>
+<header>
+    <h1>Bienvenido a Mi Página Web</h1>
+</header>
+<main>
+    <p>Esta es una página web básica creada con HTML y CSS.</p>
+</main>
+<footer>
+    <p>&copy; 2024 Mi Página Web. Hecho por Miguel Sanchez, desplegado AWS con ECS</p>
+</footer>
 </body>
 </html>
